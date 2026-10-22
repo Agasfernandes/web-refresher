@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewCraft | Cold Brew Concentrate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">BrewCraft</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#how-to">How It Works</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="about">
+            <div class="hero-content">
+                <h1>Barista-Quality Cold Brew in 10 Seconds.</h1>
+                <p>Pure, slow-steeped organic coffee concentrate. No waiting, no mess - just pour, mix, and go.</p>
+                <a href="#calculator" class="btn">Try the Brew Calculator</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=600" alt="Bottle of dark cold brew coffee concentrate on a counter">
+            </div>
+        </section>
+
+        <!-- Product Features (Grid) -->
+        <section class="features" id="how-to">
+            <h2>Why BrewCraft?</h2>
+            <div class="grid-container">
+                <article class="card">
+                    <h3>⚡ 10-Second Prep</h3>
+                    <p>Pour 1 part concentrate, add 2 parts water or milk, and you are ready to drink.</p>
+                </article>
+                <article class="card">
+                    <h3>🌿 100% Organic</h3>
+                    <p>Single-origin arabica beans, steeped cold for 24 hours for zero bitterness.</p>
+                </article>
+                <article class="card">
+                    <h3>☕ 16 Servings per Bottle</h3>
+                    <p>Save money and cut café trips with up to 16 fresh cups in one compact bottle.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Interactive JS Feature: Serving Calculator -->
+        <section class="calculator-section" id="calculator">
+            <h2>Coffee Serving Calculator</h2>
+            <p>Select how many cups you want to prepare:</p>
+
+            <div class="calc-box">
+                <label for="servings-slider">Number of cups: <span id="cups-count">2</span></label>
+                <input type="range" id="servings-slider" min="1" max="6" value="2">
+
+                <div class="recipe-display">
+                    <p>Concentrate needed: <strong><span id="concentrate-amount">60</span> ml</strong></p>
+                    <p>Water or milk needed: <strong><span id="water-amount">180</span> ml</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 BrewCraft Coffee Co. Built for Web Dev II Formative Assessment.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
